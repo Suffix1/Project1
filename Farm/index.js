@@ -1,6 +1,6 @@
 class Farm {
-    constructor() {
-
+    constructor(name) {
+        this.name = name
     }
 }
 
