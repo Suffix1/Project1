@@ -11,3 +11,4 @@ function slowSearch(brand) {
     return cars.find(car => car.brand === brand)
 }
 
+console.log(slowSearch('Toyota'))

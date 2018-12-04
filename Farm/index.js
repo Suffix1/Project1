@@ -19,8 +19,7 @@ class Farm {
             .reduce((a, b) => a + b, 0) +
             this.animals
             .map(animal => animal.getValueInEuros())
-            .reduce((a, b) => a + b, 0)
-            
+            .reduce((a, b) => a + b, 0)      
             
     }
 
