@@ -7,7 +7,6 @@ class Crop {
     }
     getCosts() {
         return this.costs * this.acres
-
     }
     
 }
@@ -15,12 +14,9 @@ class Crop {
 class Wheat extends Crop {
     constructor(acres) {
         super(acres)
-        this.price = 3
-        this.costs = 340
-        
-        
+        this.price = 1.5
+        this.costs = 340    
     }
-
     getYieldInKg() {
         return Math.pow(this.acres * 1.5, 1.3)
     }

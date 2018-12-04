@@ -33,7 +33,7 @@ test('A crop can store its area size', () => {
 
   test('Wheat class calculates the proper yield value', () => {
     const wheat = new Wheat(100)
-    expect(wheat.getYieldInEuros()).toBeCloseTo(2023.2, 1)
+    expect(wheat.getYieldInEuros()).toBeCloseTo(1011.6, 1)
   })
   
   test('Sugarcane class calculates the proper yield value', () => {
