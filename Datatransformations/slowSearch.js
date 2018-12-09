@@ -12,3 +12,14 @@ function slowSearch(brand) {
 }
 
 console.log(slowSearch('Toyota'))
+
+carsByBrand = { 
+    toyota: {brand: 'Toyota', model: 'Aygo'},
+    skoda: {brand: 'Skoda', model: 'Octavia'}}
+
+function fastSearch(brand) {
+    console.log(carsByBrand[brand])
+}
+//console.log(carsByBrand)
+
+fastSearch('toyota')

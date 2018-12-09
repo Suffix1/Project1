@@ -1,0 +1,1 @@
+const randomNumberInAPromise = Promise.resolve(Math.random())
