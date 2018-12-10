@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clock!</title>
+
+                <link href="./styles.css" rel="stylesheet"> 
+
+    </head>
+    <body>
+        <main>
+            <div class="container">
+            <span id="h"></span>
+            <span id="dots">:</span>
+            <span id="m"></span>
+            <span id="dots">:</span>
+            <span id="s"></span>
+            </div>
+
+
+        </main>
+        <script>
+        function clock() {
+            let dateToday = new Date();
+            let h = dateToday.getHours();
+            let m = dateToday.getMinutes();
+            let s = dateToday.getSeconds();
+            
+            h = addZeros(h)
+            m = addZeros(m)
+            s = addZeros(s)
+
+            document.getElementById('h').innerHTML = h
+            document.getElementById('m').innerHTML = m
+            document.getElementById('s').innerHTML = s
+            setTimeout(clock, 1000)
+            
+
+        }
+clock()
+        function addZeros(i) {
+            if(i < 10)i = "0" + i
+            return i
+        }
+        
+        </script>
+    </body>
+
+</html>
