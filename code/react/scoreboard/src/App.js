@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Title from './Title'
+import Title from './components/Title'
+import LightSwitch from './components/LightSwitch'
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-Title">Welcome to React</h1>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -23,7 +24,8 @@ class App extends Component {
           </a>
         </header>
         <main>
-          <title />
+          <Title content = "Some simple Title" />
+          <LightSwitch />
         </main>
       </div>
     );
