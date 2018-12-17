@@ -21,6 +21,7 @@ export default class UserBoard extends Component {
             }
         ]
         
+        
     }
 
 
@@ -34,7 +35,7 @@ renderUser = (user) => {
 
 render() {
     return (
-        <div className="userboard">
+        <div className="Userboard">
         <h1>Userboard</h1>
         <ul> 
             {
