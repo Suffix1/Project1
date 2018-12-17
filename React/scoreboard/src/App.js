@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Title from './components/Title';
+import Scoreboard from './components/Scoreboard'
 import './App.css';
 
 class App extends Component {
@@ -7,9 +8,10 @@ class App extends Component {
     return (
       <div className="App">
         <header>
+          <Title content = "Title"/>
         </header>
         <main>
-          <Title content = "Title"/>
+          <Scoreboard />
         </main>
       </div>
     );
