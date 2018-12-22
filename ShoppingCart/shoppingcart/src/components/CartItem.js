@@ -1,32 +1,22 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
-export default class CartItem extends Component {
-    state = {
-        products: [
-            {
-                id: 1,
-                name: "Prada Shoes",
-                price: 570
-            },
-            {
-                id: 2,
-                name: "Rolex Watch",
-                price: 649
-            },
-            {
-                id: 3,
-                name: "Paper clips",
-                price: 0.1
-            }
-        ]
+export default class CartItem extends PureComponent {
+    static propTypes = {
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+        quantity: PropTypes.number.isRequired,
+        onChange: PropTypes.func.isRequired
     }
-    render() {
-        return (
-            <div className="shopping-list">
-            <h1>Shopping List</h1>
-            <ul>{this.state.products}</ul>
-            </div>
-        )
 
+
+render() {
+    return <li>
+        <b>Name:</b>{this.props.name}
+        <b>Price:</b>{this.props.price}
+        <b>Quantitiy:</b>{this.props.quantity}
+        <button onClick={this.props.onPlusClick}>+</button>
+    </li>
     }
 }
