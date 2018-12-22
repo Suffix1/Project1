@@ -11,11 +11,12 @@ export default class CartItem extends PureComponent {
 
     render() {
         return (
-            <ul>
+            <li>
                 <b>Name:</b>{this.props.name}
                 <b>Price:</b>{this.props.price}
                 <b>Quantity:</b>{this.props.quantity}
-            </ul>
+                <button onClick={this.props.onPlusClick}>+</button>
+            </lil>
             )
     }
 }

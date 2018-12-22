@@ -52,7 +52,11 @@ render() {
   return (
     <div className="App">
     <ul>
-      {this.state.props.map</ul></div>
+      {this.state.props.map(p => <Cartitem keky=
+      
+      
+      
+      </ul></div>
   )
 }
 
