@@ -1,9 +1,12 @@
 import React, { PureComponent } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Dogslist extends PureComponent {
 
    renderDogBreed(breed) {
-       return <li key={breed}> {breed} </li>
+       return <li key={breed}>
+        <Link to ={`/dog-breeds/${breed}`}>{breed}</Link>
+         </li>
    }
 
     

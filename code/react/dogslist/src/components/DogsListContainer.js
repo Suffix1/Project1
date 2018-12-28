@@ -1,8 +1,9 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import request from 'superagent'
-import Dogslist from './Dogslist'
+import Dogslist from './DogsList'
 
-export default class DogsListContainer extends PureComponent {
+
+export default class DogsListContainer extends Component {
     state = { dogBreeds: null }
 
     componentDidMount() {
@@ -23,6 +24,7 @@ export default class DogsListContainer extends PureComponent {
 
     render() {
         return <Dogslist dogBreeds={this.state.dogBreeds} />
+                
     }
 
 }
