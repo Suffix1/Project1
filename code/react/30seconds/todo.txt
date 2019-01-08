@@ -1,0 +1,13 @@
+1. scoreboard to keep track of scores
+1b adding names to the scoreboard
+1c removing names from the scoreboard
+1d way to reset the scores
+
+2a timer that counts down from 30 seconds
+2b button to reset the timer
+
+3. keep track of rounds played
+
+4. show who's turn it is
+
+5. show player count

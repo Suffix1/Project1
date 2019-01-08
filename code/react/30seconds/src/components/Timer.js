@@ -1,18 +1,12 @@
 import React, { Component } from 'react'
 
 export default class Timer extends Component {
-    constructor() {
-        super();
-        
-        var today = new Date()
-        this.state = {
-            date: today
-        }
-    }
-
-    render(){
+    render() {
         return (
-        <div className="date"> {this.state.today}</div>
-        )}
+            <div>
+                <h1> {this.props.minutes}:{this.props.seconds} </h1>
+            </div>
+        )
+    }
 }
 
